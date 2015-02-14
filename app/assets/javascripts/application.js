@@ -21,6 +21,8 @@
 //= require vendor/jquery.sparkline
 //= require vendor/select2
 
+//= require modules/pikaday.jquery
+
 //= require namespace
 //= require general
 //= require invitations
