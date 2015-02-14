@@ -30,6 +30,7 @@
 //= require views/autocomplete/autocomplete
 
 //= require modules/pikaday.jquery
+//= require modules/autofocus.jquery
 
 //= require general
 //= require invitations

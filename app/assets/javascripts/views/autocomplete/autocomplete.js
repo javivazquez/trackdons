@@ -13,6 +13,7 @@
     initialize: function (options) {
       _.extend(this, options);
       this.filter = _.debounce(this.filter, this.wait);
+      $(document).on('click', _.bind(this.hide, this));
     },
 
     render: function () {
@@ -22,8 +23,7 @@
       this.input
       .keyup(_.bind(this.keyup, this))
       .keydown(_.bind(this.keydown, this))
-      .after(this.$el)
-      .blur($.proxy(this.blur, this));
+      .after(this.$el);
 
       return this;
     },
@@ -46,7 +46,7 @@
         if (this.isValid(keyword)) {
           this.filter(keyword);
         } else {
-          this.hide()
+          this.hide();
         }
         this.currentText = keyword;
       }
