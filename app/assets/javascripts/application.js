@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require i18n/translations
 
 //= require vendor/underscore
 //= require vendor/backbone
+//= require vendor/backbone.listenFor
 
 //= require vendor/tipsy
 //= require vendor/slidebars

@@ -33,7 +33,10 @@
     input: $("#mvc"),
     collection: frameworks,
     onSelect: function (model) {
-      console.log("Selected", model.label());
+      console.log(I18n.t("donations.donation.sure"), model.label());
     }
   }).render();
+
+  I18n.defaultLocale = "<%= I18n.default_locale %>";
+  I18n.locale = "<%= I18n.locale %>";
 </script>
